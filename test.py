@@ -29,7 +29,7 @@ max_freq = 4250
 w_min = 2*np.pi*min_freq
 w_max = 2*np.pi*max_freq
 wc = 2*np.pi*4200
-wvec = np.arange(w_min,w_max,0.1)
+wvec = np.arange(w_min,w_max)
 Xm_mag = np.abs(Xm(w=wvec,Ac=1.99,N=1,wc=wc))
 
 fig,ax = plt.subplots()
